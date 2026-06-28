@@ -1,0 +1,1266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgb(32, 32,32), #0099ff);
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 150px;
+}
+
+.header {
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: white;
+    padding: 40px 0 20px 0;
+}
+
+.navigation {
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px 30px 0 0;
+}
+
+nav a {
+    position: relative;
+    font-size: 22px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0099ff;
+}
+
+nav a::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -10%;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0099ff;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 20px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.two {
+    font-size: 26px;
+}
+
+#name {
+    font-size: 36px;
+    background: linear-gradient(45deg, rgb(255, 255, 255), #0099ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.info span {
+    color: rgb(0, 183, 255);
+}
+
+.about_me {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 20px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.about_title {
+    padding: 0 30px;
+}
+
+.about_info {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about_text {
+    margin-top: 2%;
+    font-size: 24px;
+}
+
+.about_text p {
+    margin-top: 20px;
+}
+
+.about_image img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 0 20px;
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #0099ff;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.skills div:not(.image_list) {
+    border-radius: 40px;
+    padding: 20px 40px;
+}
+
+.skills li {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 4%;
+}
+
+.knowledge {
+    border: 3px solid aliceblue;
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.image_list {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    column-gap: 10px;
+}
+
+.image_list div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_list p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.image_list img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.pro_skills {
+    border: 3px solid aliceblue;
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.experience {
+    border: 3px solid aliceblue;
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.personal_skills {
+    border: 3px solid aliceblue;
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.competencies {
+    padding: 40px 80px;
+    border: 3px solid aliceblue;
+    border-radius: 60px;
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.scroll_block {
+    height: 500px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.scroll_block::-webkit-scrollbar {
+    width: 8px;              /* небольшой размер */
+}
+
+.scroll_block::-webkit-scrollbar-track {
+    background: transparent; /* фон не меняем */
+}
+
+.scroll_block::-webkit-scrollbar-thumb {
+    background: #3bbcff;     /* голубой */
+    border-radius: 20px;     /* закругление */
+}
+
+.c.scroll_block::-webkit-scrollbar-thumb:hover {
+    background: #5ccaff;     /* немного светлее при наведении */
+}
+
+.competencies h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.competencies p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.competencies h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.competencies ul {
+    border-left: 3px solid #0099ff;
+    padding-left: 20px;
+}
+
+.competencies li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.achievements {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.achievements_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements_list div {
+    margin-top: 40px;
+    margin-bottom: 400px;
+}
+
+.work {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+.work_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.work_list div {
+    width: 30%;
+}
+
+.work_list img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.documents {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.document_list div {
+    width: 30%;
+    margin-bottom: 400px;
+}
+
+.document_list img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.patriot {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.patriot_list div {
+    width: 30%;
+    margin-bottom: 400px;
+}
+
+.patriot_list img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contacts_list {
+    display: flex;
+    gap: 30px;
+}
+
+.contacts_list img {
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: auto;
+    margin-top: 20px;
+}
+
+.contacts p {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 40px 20px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    font-size: 20px;
+}
+
+footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer nav {
+    margin-top: 40px;
+}
+
+/* Presentation refresh */
+:root {
+    --page-bg: #101820;
+    --panel-bg: rgba(17, 24, 39, 0.92);
+    --panel-bg-soft: rgba(24, 33, 49, 0.86);
+    --line: rgba(226, 232, 240, 0.26);
+    --text-soft: #cbd5e1;
+    --accent: #35b8ff;
+    --accent-2: #4ade80;
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.34);
+}
+
+body {
+    background:
+        linear-gradient(135deg, rgba(53, 184, 255, 0.2), transparent 32%),
+        linear-gradient(180deg, #141414 0%, var(--page-bg) 48%, #0f3f55 100%);
+    line-height: 1.45;
+}
+
+.header {
+    background: rgba(10, 12, 16, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.title h1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.15;
+}
+
+.navigation {
+    width: min(1120px, 92%);
+    padding: 16px 22px;
+    border-radius: 18px 18px 0 0;
+    background: rgba(24, 31, 42, 0.94);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+nav a {
+    margin: 0;
+    padding: 8px 2px;
+    font-size: clamp(16px, 1.7vw, 20px);
+}
+
+.info,
+.about_me,
+.knowledge,
+.pro_skills,
+.experience,
+.personal_skills,
+.competencies,
+.achievements,
+.work,
+.documents,
+.patriot,
+.contacts {
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: linear-gradient(145deg, var(--panel-bg), rgba(7, 10, 16, 0.96));
+    box-shadow: var(--shadow);
+}
+
+.info,
+.about_me,
+.competencies,
+.achievements,
+.work,
+.documents,
+.patriot,
+.contacts {
+    width: min(1120px, 92%);
+}
+
+.info {
+    gap: 26px;
+    align-items: center;
+}
+
+.info p,
+.about_text p,
+.competencies p,
+.competencies li,
+.card_caption,
+footer p {
+    color: var(--text-soft);
+}
+
+#name {
+    margin: 12px 0;
+    background: linear-gradient(90deg, #ffffff, var(--accent), var(--accent-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.about_info {
+    align-items: center;
+}
+
+.about_image img {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+.skills {
+    width: min(1120px, 100%);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.skills div:not(.image_list) {
+    border-radius: 22px;
+    padding: 24px;
+}
+
+.container h3,
+.competencies h3 {
+    color: var(--accent);
+}
+
+.image_list {
+    grid-template-columns: repeat(3, minmax(72px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.image_list div {
+    min-height: 124px;
+    padding: 12px 8px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.image_list img {
+    width: 64px;
+    height: 64px;
+}
+
+.scroll_block {
+    padding-right: 16px;
+}
+
+.achievements_list,
+.work_list {
+    justify-content: initial;
+}
+
+.documents,
+.patriot {
+    display: block;
+}
+
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 28px;
+}
+
+.portfolio_card {
+    min-height: 220px;
+    padding: 16px;
+    border: 1px solid rgba(226, 232, 240, 0.18);
+    border-radius: 18px;
+    background: var(--panel-bg-soft);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio_card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.portfolio_card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(53, 184, 255, 0.52);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.32);
+}
+
+.portfolio_card img,
+.work_list img,
+.document_list img,
+.patriot_list img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 14px;
+    object-fit: cover;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.portfolio_card h3 {
+    color: #ffffff;
+}
+
+.portfolio_placeholder {
+    display: flex;
+    min-height: 180px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: dashed;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.portfolio_placeholder h3 {
+    margin-bottom: 8px;
+}
+
+.card_caption {
+    font-size: 18px;
+}
+
+.contacts_list a {
+    display: inline-flex;
+    border-radius: 50%;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.contacts_list a:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.16);
+}
+
+footer {
+    min-height: 220px;
+    height: auto;
+    gap: 8px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    section {
+        scroll-margin-top: 90px;
+    }
+
+    .info,
+    .about_info {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .info,
+    .about_me,
+    .competencies,
+    .achievements,
+    .work,
+    .documents,
+    .patriot,
+    .contacts {
+        padding: 28px 18px;
+        border-radius: 18px;
+    }
+
+    .two,
+    .about_text {
+        font-size: 20px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    .about_info {
+        gap: 22px;
+        padding: 10px 0 0;
+    }
+
+    .about_image {
+        text-align: center;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .competencies {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .portfolio_grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer nav {
+        margin-top: 18px;
+    }
+}
+
+/* Refined portfolio layout */
+body {
+    overflow-x: hidden;
+}
+
+main {
+    padding-bottom: 18px;
+}
+
+.title {
+    padding: 44px 0 24px;
+}
+
+.navigation {
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+}
+
+.info,
+.about_me,
+.competencies,
+.achievements,
+.work,
+.documents,
+.patriot,
+.contacts {
+    margin-top: 34px;
+}
+
+.about_me,
+.competencies,
+.achievements,
+.work,
+.documents,
+.patriot,
+.contacts {
+    padding: 42px;
+}
+
+.about_title {
+    padding: 0;
+}
+
+.about_title h2,
+.competencies h2,
+.achievements h2,
+.work h2,
+.documents h2,
+.patriot h2,
+.contacts h2 {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.15;
+}
+
+.about_title h2::after,
+.competencies h2::after,
+.achievements h2::after,
+.work h2::after,
+.documents h2::after,
+.patriot h2::after,
+.contacts h2::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 58%;
+    height: 3px;
+    content: "";
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.about_info {
+    display: grid;
+    grid-template-columns: minmax(230px, 320px) 1fr;
+    gap: 34px;
+    padding: 0;
+}
+
+.about_image {
+    align-self: start;
+    padding: 10px;
+    border: 1px solid rgba(226, 232, 240, 0.18);
+    border-radius: 24px;
+    background:
+        linear-gradient(145deg, rgba(53, 184, 255, 0.16), rgba(74, 222, 128, 0.06)),
+        rgba(255, 255, 255, 0.04);
+}
+
+.about_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    object-fit: contain;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.about_text {
+    margin: 0;
+    font-size: clamp(19px, 2vw, 23px);
+}
+
+.about_text p:first-child {
+    margin-top: 0;
+}
+
+.container {
+    width: min(1120px, 92%);
+    padding: 0;
+}
+
+.skills {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 34px;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+}
+
+.knowledge,
+.pro_skills,
+.experience,
+.personal_skills {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-height: 0;
+}
+
+.knowledge {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+    column-gap: 22px;
+    align-items: start;
+}
+
+.knowledge > h3:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.knowledge > ul {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.knowledge > h3:not(:first-child) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.knowledge > .image_list {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.knowledge::before,
+.pro_skills::before,
+.experience::before,
+.personal_skills::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    content: "";
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.skills div:not(.image_list) {
+    padding: 28px;
+    border-radius: 24px;
+}
+
+.container h3 {
+    margin: 0 0 18px;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.knowledge h3:not(:first-child) {
+    margin-top: 0;
+}
+
+.skills ul {
+    display: grid;
+    gap: 12px;
+}
+
+.skills li {
+    position: relative;
+    margin: 0;
+    padding: 12px 14px 12px 38px;
+    list-style: none;
+    border: 1px solid rgba(226, 232, 240, 0.1);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.045);
+    color: var(--text-soft);
+    font-size: 17px;
+}
+
+.skills li::before {
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    content: "";
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 5px rgba(53, 184, 255, 0.12);
+}
+
+.image_list {
+    grid-template-columns: repeat(auto-fit, minmax(94px, 1fr));
+    gap: 12px;
+}
+
+.image_list div {
+    justify-content: space-between;
+    min-height: 118px;
+    padding: 14px 10px;
+    border-radius: 16px;
+}
+
+.image_list p {
+    margin: 0 0 10px;
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.image_list img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.competencies {
+    overflow: hidden;
+}
+
+.scroll_block {
+    height: min(520px, 68vh);
+    padding: 22px 20px;
+    border: 1px solid rgba(226, 232, 240, 0.12);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.competencies ul {
+    border-left: 2px solid rgba(53, 184, 255, 0.72);
+}
+
+.portfolio_grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.portfolio_card {
+    min-height: 210px;
+}
+
+.portfolio_card img,
+.work_list img,
+.document_list img,
+.patriot_list img {
+    height: 220px;
+    object-fit: contain;
+    padding: 12px;
+    border: 1px solid rgba(226, 232, 240, 0.1);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
+}
+
+.card_caption {
+    line-height: 1.35;
+}
+
+.contacts_list {
+    margin-top: 18px;
+}
+
+.contacts_list img {
+    margin-top: 0;
+    padding: 9px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.16);
+}
+
+@media (max-width: 980px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        align-items: start;
+        grid-auto-rows: auto;
+    }
+
+    .knowledge {
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge > h3:first-child,
+    .knowledge > ul,
+    .knowledge > h3:not(:first-child),
+    .knowledge > .image_list {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .about_info {
+        grid-template-columns: minmax(210px, 280px) 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background:
+            linear-gradient(180deg, #11151c 0%, #102532 58%, #0f3f55 100%);
+    }
+
+    .title {
+        padding: 28px 0 18px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 0;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 10px 8px;
+        border: 1px solid rgba(226, 232, 240, 0.12);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.045);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    nav a::after {
+        display: none;
+    }
+
+    .info,
+    .about_me,
+    .competencies,
+    .achievements,
+    .work,
+    .documents,
+    .patriot,
+    .contacts {
+        width: calc(100% - 24px);
+        margin-top: 18px;
+        padding: 22px 16px;
+        border-radius: 18px;
+    }
+
+    .info {
+        gap: 18px;
+        font-size: 17px;
+    }
+
+    #name {
+        font-size: 29px;
+        line-height: 1.15;
+    }
+
+    .two {
+        font-size: 18px;
+    }
+
+    .about_title h2,
+    .competencies h2,
+    .achievements h2,
+    .work h2,
+    .documents h2,
+    .patriot h2,
+    .contacts h2 {
+        margin-bottom: 20px;
+        font-size: 27px;
+    }
+
+    .about_info {
+        grid-template-columns: 1fr;
+    }
+
+    .about_image {
+        width: min(280px, 100%);
+        margin: 0 auto;
+    }
+
+    .about_text {
+        font-size: 18px;
+    }
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .skills {
+        margin-top: 18px;
+        gap: 16px;
+    }
+
+    .skills div:not(.image_list) {
+        padding: 22px 16px;
+        border-radius: 18px;
+    }
+
+    .container h3 {
+        font-size: 22px;
+    }
+
+    .skills li {
+        padding: 11px 12px 11px 34px;
+        font-size: 16px;
+    }
+
+    .skills li::before {
+        left: 13px;
+        top: 17px;
+    }
+
+    .image_list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .scroll_block {
+        height: 430px;
+        padding: 16px 14px;
+    }
+
+    .competencies p,
+    .competencies li {
+        font-size: 16px;
+    }
+
+    .portfolio_grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .portfolio_card {
+        min-height: 0;
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .portfolio_card img,
+    .work_list img,
+    .document_list img,
+    .patriot_list img {
+        height: 210px;
+    }
+
+    footer {
+        padding: 28px 14px;
+        font-size: 16px;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    -webkit-text-decoration: none !important;
+    text-decoration-color: transparent !important;
+}
